@@ -1,0 +1,69 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-color: lightslategrey;
+  
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: 400px 150px 320px 200px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-board {
+  border: 1px solid black;
+  background-image: url("C:/Users/yoran/Desktop/Tetris/Tetrisgrid.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hold-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.play-button {
+  background-color: #4caf50;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#pause-btn {
+  display: none;
+}
+
+#sound-speaker{
+  font-size:30px;
+}
+
+.sound-item{
+  cursor:pointer;
+}
+
+footer {
+  bottom: 10%;
+  text-align: center;
+  bottom: 50%;
+  padding: 10px;
+ color: white;
+}
